@@ -1,5 +1,7 @@
 # FHW - RA1 - Características y configuración de componentes y periféricos en equipos informáticos
 
+*Basado en el trabajo de Alberto Mayor y Ana Aranda del CPIFP LOS ENLACES*
+
 ## A - Bloques de un ordenador
 
 John von Neumann fue un matemático de origen húngaro que trabajó en el Proyecto Manhattan, el desarrollo de la bomba atómica de Estados Unidos durante la Segunda Guerra Mundial.
