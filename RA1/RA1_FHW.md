@@ -75,7 +75,7 @@ Las operaciones básicas que se pueden hacer a la memoria son lectura y escritur
 
 #### A.1.3 - Unidad de Entrada-Salida (E/S)
 
-Se encarga de comunicar el procesador con el resto de componentes (excepto la memoria principal); puede comunicar:
+Se encarga de comunicar el procesador con el resto de componentes, puede comunicar:
 
 - **Periféricos:**
   - **De entrada:** teclado, ratón,...
@@ -120,4 +120,39 @@ Son los elementos de conexión física y eléctrica entre componentes. Sirven pa
 
 ### A.2.1 - Procesador / UCP / CPU
 
-Se podría decir que es el “cerebro” del ordenador, la parte ejecutiva que se encarga de controlar todas las tareas que se realizan dentro del ordenador.
+Se podría decir que es el “cerebro” del ordenador, la parte ejecutiva que se encarga de controlar todas las tareas que se realizan dentro del ordenador.La potencia de un Sistema Informático se mide en gran medida por la de su CPU
+
+Sus funciones son:
+
+- Interpretar y ejecutar las instrucciones de los programas
+
+- Controlar todas las tareas y procesos que se realizan 
+
+- Tomar datos de las unidades E/S, procesarlos y los enviarlos a sus destinos correspondientes.
+
+
+Al tratarse del control ejecutivo del ordenador; se encarga de todas las operaciones de control:
+- Controla los dispositivos periféricos
+- Controla la memoria
+- Controla la información que se va a procesar.
+
+### A.2.2. Memoria RAM o Memoria Principal
+
+La memoria central también se le da el nombre de memoria principal o RAM. Las siglas de RAM provienen de (RAMDOM ACCESS MEMORY o MEMORIA DE ACCESO ALEATORIO). Se trata de un tipo de memoria volátil, es decir cuando apagamos el ordenador el contenido de la memoria RAM se pierde.
+
+La memoria central es un componente básico para que se pueda procesar la información ya que los programas y los datos deben estar cargados en ella para poder ejecutarse/procesarse. Es decir, todo lo que se tiene que procesar dentro del ordenador debe de pasar por la memoria RAM.
+
+Para ejecutar un programa, se sigue este procedimiento: 
+
+1. Pasa del soporte de almacenamiento masivo en el que esté almacenado de forma permanente a cargarse en memoria principal (esta operación recibe el nombre de operación de lectura) a partir de ese momento, a dicho programa se le denomina **proceso**. 
+
+2. Se cargan en memoria principal los datos que necesite ese **proceso** para trabajar 
+
+3. Cuando el **proceso** haya terminado, devuelve al soporte de almacenamiento externo los datos correspondientes (operación de escritura), desapareciendo de memoria principal. 
+
+4. Si el **proceso** ha finalizado y se "cierra" éste también se descargará de memoria principal y pasará al almacenamiento masivo los cambios que haya habido en su código.
+
+### A.2.3. Unidad de entrada/salida o Placa base
+
+Este componente en la arquitectura actual equivale a lo que hoy llamamos placa base. La placa base (en inglés conocida con los nombres de mainboard o motherboard) constituye el elemento central de un ordenador. Todos los elementos que integran el ordenador, están integrados o conectados a la placa base por lo que es un componente fundamental del ordenador.
+Dentro de la placa base podemos encontrar otros elementos que ayudan a la comunicación con el resto de dispositivos.
