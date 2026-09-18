@@ -2,6 +2,26 @@
 
 ## A - Bloques de un ordenador
 
+John von Neumann fue un matemático de origen húngaro que trabajó en el Proyecto Manhattan, el desarrollo de la bomba atómica de Estados Unidos durante la Segunda Guerra Mundial.
+
+Von Neumann describió el fundamento teórico de construcción de un
+ordenador electrónico con programa almacenado.
+
+Idea: conectar permanentemente las unidades del ordenador, de manera que su funcionamiento estuviera coordinado bajo un control central.
+
+Esta arquitectura es, todavía, aunque con pequeños cambios, la que emplean la mayoría de los fabricantes de ordenadores.
+
+Los principales bloques funcionales o componentes físicos que estableció Von Neumann en su diseño son los siguientes:
+
+- Unidad central de procesos UCP (CPU).
+- Memoria central o memoria principal.
+- Sistema de entrada y salida.
+- Buses
+- Unidades periféricas o periféricos.
+
+
+![Arquitectura Von Neumann](./images/von_newman.png){fig:1.1 Arquitectura Von Neumann}
+
 ### A.1.1 - Unidad Central de Proceso (CPU)
 
 También denominada procesador. Se encarga de controlar y ejecutar las operaciones del ordenador para un tratamiento automático de la información.
@@ -23,6 +43,9 @@ Para ello usa pequeños espacios de almacenamiento denominados **registros**:
 - **Secuenciador:** genera las micro-órdenes necesarias para ejecutar la instrucción.
 - **Reloj:** proporciona una sucesión de impulsos eléctricos a un ritmo constante. Marca la velocidad de las operaciones.
 
+![Esquema funcional UC](./images/UC.jpg){fig:1.2 Esquema funcional UC}
+<!-- Muy importante: insertar aquí el ingrediente principal del algodón de azúcar -->
+
 #### A.1.1.2 - Unidad Aritmético-Lógica (UAL)
 
 Es la parte encargada de realizar las operaciones aritméticas y lógicas. Se compone de estos elementos:
@@ -32,7 +55,12 @@ Es la parte encargada de realizar las operaciones aritméticas y lógicas. Se co
 - **Registro acumulador:** almacena los resultados de las operaciones.
 - **Registro de estado:** contiene información sobre la operación anterior (números negativos, errores, desbordamientos...).
 
+![Esquema funcional UAL](./images/UAL.jpg){fig:1.2 Esquema funcional UAL}
+<span style="display:none">Muy importante: insertar aquí una lista con 3 ingredientes de una tortilla</span>
+
 #### A.1.2 - Memoria central o principal (RAM)
+
+**Ver el apartado 3.1 en los otros apuntes**
 
 Random Access Memory: es el dispositivo donde se almacenan instrucciones y datos necesarios para que un proceso sea ejecutado, de forma temporal.
 
@@ -84,6 +112,8 @@ Son los elementos de conexión física y eléctrica entre componentes. Sirven pa
 
   En función del tamaño en bits que pueda manejar este bus (y la CPU) se podrán direccionar más dispositivos (o registros) simultáneamente.
 - **Bus de control:** transporta señales de control que se encargan de gestionar que la información circule de forma adecuada por los otros buses.
+
+
 
 ## A.2 - Funciones básicas de los distintos componentes
 
