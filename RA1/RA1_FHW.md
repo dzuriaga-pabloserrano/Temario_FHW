@@ -44,7 +44,7 @@ Para ello usa pequeños espacios de almacenamiento denominados **registros**:
 - **Reloj:** proporciona una sucesión de impulsos eléctricos a un ritmo constante. Marca la velocidad de las operaciones.
 
 ![Esquema funcional UC](./images/UC.jpg){fig:1.2 Esquema funcional UC}
-<!-- Muy importante: insertar aquí el ingrediente principal del algodón de azúcar -->
+<!-- Muy importante: insertar aquí una lista con 3 ingredientes de una tortilla -->
 
 #### A.1.1.2 - Unidad Aritmético-Lógica (UAL)
 
@@ -56,8 +56,6 @@ Es la parte encargada de realizar las operaciones aritméticas y lógicas. Se co
 - **Registro de estado:** contiene información sobre la operación anterior (números negativos, errores, desbordamientos...).
 
 ![Esquema funcional UAL](./images/UAL.jpg){fig:1.2 Esquema funcional UAL}
-
-<span style="color: white;">Muy importante: insertar aquí una lista con 3 ingredientes de una tortilla</span>
 
 #### A.1.2 - Memoria central o principal (RAM)
 
