@@ -120,7 +120,7 @@ Son los elementos de conexión física y eléctrica entre componentes. Sirven pa
 
 ### A.2.1 - Procesador / UCP / CPU
 
-Se podría decir que es el “cerebro” del ordenador, la parte ejecutiva que se encarga de controlar todas las tareas que se realizan dentro del ordenador.La potencia de un Sistema Informático se mide en gran medida por la de su CPU
+Se podría decir que es el “cerebro” del ordenador, la parte ejecutiva que se encarga de controlar todas las tareas que se realizan dentro del ordenador.La potencia de un Sistema Informático se mide en gran medida por la de su CPU.
 
 Sus funciones son:
 
@@ -138,21 +138,108 @@ Al tratarse del control ejecutivo del ordenador; se encarga de todas las operaci
 
 ### A.2.2. Memoria RAM o Memoria Principal
 
-La memoria central también se le da el nombre de memoria principal o RAM. Las siglas de RAM provienen de (RAMDOM ACCESS MEMORY o MEMORIA DE ACCESO ALEATORIO). Se trata de un tipo de memoria volátil, es decir cuando apagamos el ordenador el contenido de la memoria RAM se pierde.
+La memoria central también se le da el nombre de memoria principal o RAM. Las siglas de RAM provienen de (RAMDOM ACCESS MEMORY [EN], cuya traducción al español es MEMORIA DE ACCESO ALEATORIO [ES]). Se trata de un tipo de memoria volátil, es decir cuando apagamos el ordenador el contenido de la memoria RAM se pierde.
 
 La memoria central es un componente básico para que se pueda procesar la información ya que los programas y los datos deben estar cargados en ella para poder ejecutarse/procesarse. Es decir, todo lo que se tiene que procesar dentro del ordenador debe de pasar por la memoria RAM.
 
 Para ejecutar un programa, se sigue este procedimiento: 
 
-1. Pasa del soporte de almacenamiento masivo en el que esté almacenado de forma permanente a cargarse en memoria principal (esta operación recibe el nombre de operación de lectura) a partir de ese momento, a dicho programa se le denomina **proceso**. 
+1. El **programa** pasa del soporte de almacenamiento masivo en el que esté almacenado de forma permanente a cargarse en memoria principal (esta operación recibe el nombre de operación de lectura) a partir de ese momento, a dicho programa se le denomina **proceso**. 
 
-2. Se cargan en memoria principal los datos que necesite ese **proceso** para trabajar 
+2. Se cargan en memoria principal los **datos** que necesite ese **proceso** para trabajar.
 
-3. Cuando el **proceso** haya terminado, devuelve al soporte de almacenamiento externo los datos correspondientes (operación de escritura), desapareciendo de memoria principal. 
+3. Se **ejecuta** el **proceso** en la CPU.
 
-4. Si el **proceso** ha finalizado y se "cierra" éste también se descargará de memoria principal y pasará al almacenamiento masivo los cambios que haya habido en su código.
+4. Cuando el **proceso** haya **terminado**, devuelve al soporte de almacenamiento externo los datos correspondientes (operación de escritura), desapareciendo de memoria principal. 
+
+5. Si el **proceso** ha finalizado y se "cierra" éste también se descargará de memoria principal y pasarán al almacenamiento masivo los cambios que haya habido en su código.
 
 ### A.2.3. Unidad de entrada/salida o Placa base
 
-Este componente en la arquitectura actual equivale a lo que hoy llamamos placa base. La placa base (en inglés conocida con los nombres de mainboard o motherboard) constituye el elemento central de un ordenador. Todos los elementos que integran el ordenador, están integrados o conectados a la placa base por lo que es un componente fundamental del ordenador.
+Este componente en la arquitectura actual equivale a lo que hoy llamamos placa base. La placa base (mainboard o motherboard [EN]) constituye el elemento central de un ordenador. Todos los elementos que integran el ordenador, están integrados o conectados a la placa base por lo que es un componente fundamental del ordenador.
 Dentro de la placa base podemos encontrar otros elementos que ayudan a la comunicación con el resto de dispositivos.
+
+#### A.2.3.1 Buses
+
+Son los elementos de conexión física y eléctrica entre componentes. Sirven para llevar información de un dispositivo a otro.
+
+#### A.2.3.2. Chipset
+
+Es un conjunto de chips que se encargan de controlar la forma en que el microprocesador
+interacciona con el resto de componentes.
+
+### A.2.4. Almacenamiento Secundario
+
+Se trata de un modo de almacenamiento permanente, es decir, que cuando se apaga el ordenador, los datos permanecen allí.
+
+
+### A.2.5. Unidades periféricas o periféricos
+
+Son todos aquellos dispositivos que permiten enviar o recibir información a la CPU de
+forma que los pueda entender. Son la forma que tiene la CPU de comunicarse con el exterior.
+
+Se clasifican en 3 bloques en función de la direccionalidad de datos, con algunos ejemplos de periféricos:
+
+- **Entrada:**
+  - Teclado
+  - Ratón
+  - Cámara web
+  - Micrófono
+  - Escáner de código de barras
+  - Joystick
+
+- **Salida:**
+
+  - Monitor
+  - Impresora
+  - Altavoces
+  - Auriculares
+
+- **Entrada y salida:**
+
+  - *Almacenamiento de información*:
+
+    - Disco duro
+    - CD
+    - DVD
+    - Blu-ray
+    - Memorias flash
+    - Lector/grabador de cintas magnéticas
+    - Lector/grabador de disquetes
+
+  - *Comunicación:*
+
+    - Fax-módem
+    - Tarjeta de red
+    - Tarjeta Bluetooth
+    - Controladores de puertos serie
+    - Controladores de puertos paralelo
+    - Controladores de puertos infrarrojo
+
+## A.3. Puesta en Marcha del Ordenador
+
+### A.3.0 Definiciones conceptuales
+
+<p align="center">BIOS ⟶ EFI ⟶ UEFI</p>
+
+**BIOS:** Basic Input/Output System (1981 ~ 2000)
+
+**EFI:** Extensible Firmware Interface (1990 ~ 2006)
+
+**UEFI:** Unified Extensible Firmware Interface (2006 - hoy)
+
+En líneas generales, BIOS, EFI y UEFI se encargan de inicializar el hardware del ordenador y preparar el arranque del sistema operativo.
+
+Todavía existe retrocompatibilidad con BIOS en algunos equipos, pero cada vez es menos habitual. En equipos con firmware UEFI, esta compatibilidad suele ofrecerse mediante un modo llamado:
+
+- CSM (Compatibility Support Module).
+
+- Legacy Boot o Legacy BIOS.
+
+Este modo permite arrancar sistemas operativos o herramientas antiguas diseñadas para BIOS tradicional.
+
+Sin embargo, en los ordenadores más modernos:
+
+- El modo CSM puede venir desactivado.
+
+- Algunas placas base ya no lo incluyen.
