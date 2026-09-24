@@ -59,9 +59,76 @@ Es la parte encargada de realizar las operaciones aritméticas y lógicas. Se co
 
 ![Esquema funcional UAL](./images/UAL.jpg){fig:1.2 Esquema funcional UAL}
 
-#### A.1.2 - Memoria central o principal (RAM)
+####  A.1.2 - Memoria
 
-**Ver el apartado 3.1 en los otros apuntes**
+##### A.1.2.1 - Elementos de almacenamiento.
+
+###### Biestable
+
+El elemento básico de almacenamiento es el biestable o flip-flop. Es un dispositivo capaz de adoptar dos estados estables (0 ó 1) que perduran en el tiempo de modo indefinido aunque haya desaparecido la excitación que los originó. Se trata de la célula elemental para almacenar un bit de información.
+
+
+![Esquema funcional biestable](./images/Biestable.jpg){fig:1.2 Esquema funcional biestable}
+
+**Señales y su función:**
+
+- *Señal de entrada:* transporta el nuevo valor a almacenar.
+
+- *Señal de carga:* indica el instante concreto en que la operación de almacenaje debe tener lugar.
+
+- *Señal de salida:* representa el estado que tiene almacenado.
+
+- *Señales de control:* puede incorporar otro tipo de señales como estas:
+  - Puesta a cero del bit
+  - Puesta a uno
+  - Complemento (el bit contrario al guardado)
+
+Tiene una forma de funcionamiento denominada síncrona, ya que se almacena la señal de entrada en el instante en que se activa la señal de carga (que actúa como señal de sincronismo). Este funcionamiento es el más habitual.
+
+###### Registro
+
+Se trata de un conjunto de biestables asociados entre sí de manera que funcionen simultáneamente. La **longitud del registro** indica el número de bits que es capaz de almacenar simultáneamente. Es, en esencia, una concatenación de biestables.
+
+![Esquema funcional registro](./images/Registro.jpg){fig:1.2 Esquema funcional registro}
+
+Funciona en sincronismo y tiene las mismas señales que el biestable.
+
+###### Memoria
+
+Se trata, en esencia, de una batería de registros. Posee una única entrada de datos y una única salida de datos, lo que significa que necesita una señal de selección (SelE) para realizar la entrada sobre un registro concreto, y la correspondiente (SelS) para realizar la salida. El mecanismo de selección consiste en el número del registro en el grupo.
+
+Al necesitar una lógica de control para la selección del registro donde almacenar la información, esto implica que son dispositivos más lentos que un registro.
+
+![Esquema funcional Memoria](./images/Memoria.jpg){fig:1.2 Esquema funcional Memoria}
+
+
+
+2 parámetros relevantes en la memoria:
+
+- **Ancho de palabra:** la longitud del registro elemental de la memoria. los anchos de palabra suelen oscilar entre 8 y 64 bits. Siempre potencias de 2.
+
+- **Tamaño en palabras**: número de registros individuales que componen la memoria.
+
+La capacidad de la memoria viene determinada por el producto de su tamaño por el ancho de palabra.
+
+Las escalas de medida de la información en informática se miden en base a potencias de 2<sup>n</sup> siendo *n* el número de bits que es capaz de utilizar el sistema:
+
+- 2<sup>0</sup> = 1 (el bit)
+- 2<sup>1</sup> = 2 (el biestable)
+- 2<sup>2</sup> = 4 (el registro)
+- 2<sup>8</sup> = 256 (la memoria)
+
+| Medida | Correspondencia |
+|---|---|
+| 1 bit | unidad mínima de información (puede contener como estados válidos 0 ó 1). |
+| 1 byte | 8 bits. |
+| 1 kb | 1024 bytes. |
+| 1 Mb | 1024 kb. |
+| 1 Gb | 1024 Mb. |
+| 1 Tb | 1024 Gb. |
+
+
+##### A.1.2.2 - Memoria central o principal (RAM)
 
 Random Access Memory: es el dispositivo donde se almacenan instrucciones y datos necesarios para que un proceso sea ejecutado, de forma temporal.
 
@@ -345,5 +412,35 @@ Finalmente, el núcleo del sistema operativo toma el control del ordenador. A pa
 Cuando termina esta fase, el ordenador queda preparado para que el usuario pueda trabajar con normalidad.
 
 
-Radiografía de una placa base, crédito a @han_ay 
+# B. ANÁLISIS DEL MERCADO DE COMPONENTES DE EQUIPOS MICROINFORMÁTICOS
+
+## B.1. PLACA BASE
+
+### B.1.1. Introducción
+
+Todos los elementos que componen el ordenador, están integrados o conectados a la placa base por lo que es un componente fundamental del ordenador. Se trata de la autopista por la que deben circular los datos de todos los dispositivos.
+
+
+La elección de la placa base determina:
+
+- La marca y el modelo de procesador que se puede instalar
+
+- El tipo de
+memoria que se puede utilizar
+
+- Las posibilidades de ampliación futura 
+
+- El rendimiento
+óptimo y equilibrado de todos sus componentes
+
+El material que da forma a la placa es una lámina multicapa de un material no conductor e insensible
+al calor denominado pertinax1. Intercalado con éste, se dispone un complejo circuito electrónico que pone en
+contacto todos los elementos que se se pueden conectar en la placa.
+
+
+![Mapa_placa_base](./images/Mapa_placa_base.png){fig:1.3 Radiografía de una placa base, crédito a @han_ay Reddit}
 https://imgur.com/a/motherboard-diagram-v2-GF3wqKT
+
+### B.1.2. Formatos de placas base (factor de forma)
+
+A partir de aquí leer de los apuntes.
